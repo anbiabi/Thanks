@@ -1,121 +1,13 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Remerciements - Mme NGO DJAL ELISE</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Cormorant Garamond', Georgia, serif; background: linear-gradient(135deg, #1a2a4e 0%, #0f1a35 100%); color: #f5f5f5; overflow-x: hidden; min-height: 100vh; padding: 15px; }
-    .container { max-width: 850px; margin: 0 auto; }
-    .card { background: linear-gradient(135deg, #1e3a5f 0%, #152844 100%); border-radius: 20px; overflow: hidden; box-shadow: 0 25px 70px rgba(0,0,0,0.6); position: relative; animation: fadeIn 1s ease-in; }
-    @keyframes fadeIn { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
-    .blue-border { border: 4px solid #4a90e2; border-radius: 20px; padding: 8px; position: relative; }
-    .sparkle { position: absolute; width: 5px; height: 5px; background: #6eb5ff; border-radius: 50%; animation: sparkleFloat 3s ease-in-out infinite; box-shadow: 0 0 12px #6eb5ff; }
-    .sparkle:nth-child(1) { top: 12%; left: 8%; animation-delay: 0s; }
-    .sparkle:nth-child(2) { top: 22%; right: 12%; animation-delay: 0.6s; }
-    .sparkle:nth-child(3) { top: 40%; left: 6%; animation-delay: 1.2s; }
-    .sparkle:nth-child(4) { top: 58%; right: 10%; animation-delay: 1.8s; }
-    .sparkle:nth-child(5) { top: 75%; left: 15%; animation-delay: 2.4s; }
-    .sparkle:nth-child(6) { top: 30%; right: 7%; animation-delay: 3s; }
-    @keyframes sparkleFloat { 0%, 100% { transform: translateY(0) scale(1); opacity: 0.5; } 50% { transform: translateY(-12px) scale(1.4); opacity: 1; } }
-    .star { position: absolute; color: #6eb5ff; font-size: 16px; animation: starTwinkle 2.5s ease-in-out infinite; text-shadow: 0 0 10px #6eb5ff; }
-    .star:nth-child(7) { top: 8%; left: 22%; animation-delay: 0s; }
-    .star:nth-child(8) { top: 18%; right: 28%; animation-delay: 0.8s; }
-    .star:nth-child(9) { top: 48%; left: 12%; animation-delay: 1.6s; }
-    .star:nth-child(10) { top: 68%; right: 18%; animation-delay: 2.4s; }
-    @keyframes starTwinkle { 0%, 100% { opacity: 0.4; transform: scale(1) rotate(0deg); } 50% { opacity: 1; transform: scale(1.3) rotate(180deg); } }
-    .flower { position: absolute; font-size: 40px; opacity: 0; animation: flowerBloom 2s ease-out forwards; filter: hue-rotate(200deg) brightness(1.3); }
-    .flower:nth-child(11) { top: 8px; left: 8px; animation-delay: 0.5s; }
-    .flower:nth-child(12) { top: 8px; right: 8px; animation-delay: 0.7s; }
-    .flower:nth-child(13) { bottom: 8px; left: 8px; animation-delay: 0.9s; }
-    .flower:nth-child(14) { bottom: 8px; right: 8px; animation-delay: 1.1s; }
-    @keyframes flowerBloom { from { opacity: 0; transform: scale(0.5) rotate(0deg); } to { opacity: 0.6; transform: scale(1) rotate(360deg); } }
-    .corner-ornament { position: absolute; width: 60px; height: 60px; border: 2px solid #4a90e2; opacity: 0.7; }
-    .corner-ornament.top-left { top: 15px; left: 15px; border-right: none; border-bottom: none; animation: ornamentFade 2.5s ease-in-out infinite alternate; }
-    .corner-ornament.top-right { top: 15px; right: 15px; border-left: none; border-bottom: none; animation: ornamentFade 2.5s 0.6s ease-in-out infinite alternate; }
-    .corner-ornament.bottom-left { bottom: 15px; left: 15px; border-right: none; border-top: none; animation: ornamentFade 2.5s 1.2s ease-in-out infinite alternate; }
-    .corner-ornament.bottom-right { bottom: 15px; right: 15px; border-left: none; border-top: none; animation: ornamentFade 2.5s 1.8s ease-in-out infinite alternate; }
-    @keyframes ornamentFade { from { opacity: 0.5; } to { opacity: 0.9; } }
-    .content { padding: 35px 25px 25px; position: relative; z-index: 2; }
-    .header { text-align: center; margin-bottom: 25px; animation: slideDown 1s 0.3s ease-out both; }
-    @keyframes slideDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
-    .header h1 { font-family: 'Cinzel', serif; font-size: 42px; color: #6eb5ff; letter-spacing: 5px; margin-bottom: 12px; text-shadow: 2px 2px 6px rgba(0,0,0,0.6), 0 0 20px rgba(110, 181, 255, 0.4); animation: titleGlow 3s ease-in-out infinite alternate; }
-    @keyframes titleGlow { from { text-shadow: 2px 2px 6px rgba(0,0,0,0.6), 0 0 15px rgba(110, 181, 255, 0.4); } to { text-shadow: 2px 2px 6px rgba(0,0,0,0.6), 0 0 30px rgba(110, 181, 255, 0.7); } }
-    .divider { width: 200px; height: 2px; background: linear-gradient(90deg, transparent, #6eb5ff, transparent); margin: 15px auto; position: relative; }
-    .divider::after { content: '✦'; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: #1e3a5f; padding: 0 12px; color: #6eb5ff; font-size: 22px; }
-    .photo-container { text-align: center; margin: 25px 0; animation: photoZoom 1.3s 0.6s ease-out both; }
-    @keyframes photoZoom { from { opacity: 0; transform: scale(0.7); } to { opacity: 1; transform: scale(1); } }
-    .photo-frame { display: inline-block; padding: 8px; background: linear-gradient(145deg, #4a90e2, #6eb5ff); border-radius: 50%; box-shadow: 0 15px 40px rgba(74, 144, 226, 0.4); position: relative; }
-    .photo-frame::before { content: ''; position: absolute; top: -5px; left: -5px; right: -5px; bottom: -5px; border-radius: 50%; border: 3px solid #6eb5ff; opacity: 0.6; animation: photoRing 3.5s ease-in-out infinite; }
-    @keyframes photoRing { 0%, 100% { transform: scale(1); opacity: 0.6; } 50% { transform: scale(1.06); opacity: 0.9; } }
-    .photo { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 5px solid #1e3a5f; display: block; }
-    .text-content { max-width: 720px; margin: 0 auto; }
-    .family-intro { text-align: center; font-size: 28px; color: #6eb5ff; margin-bottom: 8px; animation: fadeInText 1s 0.9s ease-out both; font-weight: 600; line-height: 1.3; }
-    @keyframes fadeInText { from { opacity: 0; } to { opacity: 1; } }
-    .main-text { text-align: center; font-size: 26px; line-height: 1.8; color: #e8f0ff; margin: 20px 0; animation: fadeInText 1s 1.1s ease-out both; }
-    .main-text p { margin-bottom: 16px; }
-    .blessing { text-align: center; font-size: 25px; line-height: 1.7; color: #6eb5ff; margin: 30px 0 20px; font-style: italic; animation: fadeInText 1s 2s ease-out both; }
-    .footer-message { text-align: center; font-size: 30px; color: #6eb5ff; margin-top: 25px; font-weight: 600; animation: fadeInText 1s 2.2s ease-out both; }
-    .dove { text-align: center; font-size: 60px; margin: 20px 0; opacity: 0; animation: doveFloat 3.5s 2.5s ease-in-out both; filter: drop-shadow(0 0 15px rgba(110, 181, 255, 0.5)); }
-    @keyframes doveFloat { 0% { opacity: 0; transform: translateY(25px); } 50% { opacity: 1; transform: translateY(-8px); } 100% { opacity: 1; transform: translateY(0); } }
-    @media (max-width: 768px) { 
-      .content { padding: 25px 18px 20px; } 
-      .header h1 { font-size: 32px; letter-spacing: 3px; } 
-      .photo { width: 150px; height: 150px; } 
-      .main-text { font-size: 22px; } 
-      .corner-ornament { width: 45px; height: 45px; } 
-      .family-intro { font-size: 24px; } 
-      .blessing { font-size: 22px; }
-      .footer-message { font-size: 26px; }
-      .divider { width: 160px; }
-    }
-    @media (max-width: 480px) {
-      .header h1 { font-size: 28px; }
-      .family-intro { font-size: 21px; }
-      .main-text { font-size: 19px; }
-      .blessing { font-size: 20px; }
-      .footer-message { font-size: 23px; }
-      .photo { width: 130px; height: 130px; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
 </head>
 <body>
-  <div class="container">
-    <div class="card">
-      <div class="blue-border">
-        <div class="sparkle"></div><div class="sparkle"></div><div class="sparkle"></div>
-        <div class="sparkle"></div><div class="sparkle"></div><div class="sparkle"></div>
-        <div class="star">✦</div><div class="star">✦</div><div class="star">✧</div><div class="star">✧</div>
-        <div class="flower">🌸</div><div class="flower">🌸</div><div class="flower">🌸</div><div class="flower">🌸</div>
-        <div class="corner-ornament top-left"></div>
-        <div class="corner-ornament top-right"></div>
-        <div class="corner-ornament bottom-left"></div>
-        <div class="corner-ornament bottom-right"></div>
-        <div class="content">
-          <div class="header">
-            <h1>REMERCIEMENTS</h1>
-            <div class="divider"></div>
-          </div>
-          <div class="photo-container">
-            <div class="photo-frame">
-              <img src="photo.jpg" alt="Mme NGO DJAL ELISE">
-            </div>
-          </div>
-          <div class="text-content">
-            <p class="family-intro">À notre chère Mme NGO DJAL ELISE</p>
-            <div class="main-text">
-              <p>Nous exprimons notre profonde gratitude pour votre générosité, votre bienveillance et votre soutien constant.</p>
-              <p>Votre présence et votre dévouement ont illuminé nos cœurs.</p>
-            </div>
-            <p class="blessing">« Que le Seigneur vous bénisse et vous garde »</p>
-            <p class="footer-message">Merci infiniment ✨</p>
-          </div>
-          <div class="dove">🕊️</div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <h1>Welcome to My Website</h1>
+    <img src="photo.jpeg" alt="Mme NGO DJAL ELISE">
+    <!-- Other content -->
 </body>
 </html>

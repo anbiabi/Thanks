@@ -1,14 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thanks</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remerciements - Mme NGO DJAL ELISE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Cormorant Garamond', Georgia, serif; background: linear-gradient(135deg, #1a2a4e 0%, #0f1a35 100%); color: #f5f5f5; overflow-x: hidden; min-height: 100vh; padding: 20px; }
+    .container { max-width: 850px; margin: 0 auto; }
+    .card { background: linear-gradient(135deg, #1e3a5f 0%, #152844 100%); border-radius: 20px; overflow: hidden; box-shadow: 0 25px 70px rgba(0,0,0,0.6); position: relative; animation: fadeIn 1s ease-in; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    .blue-border { border: 4px solid #4a90e2; border-radius: 20px; padding: 10px; position: relative; }
+    .sparkle { position: absolute; width: 5px; height: 5px; background: #6eb5ff; border-radius: 50%; animation: sparkleFloat 3s ease-in-out infinite; box-shadow: 0 0 12px #6eb5ff; }
+    .sparkle:nth-child(1) { top: 12%; left: 8%; animation-delay: 0s; }
+    .sparkle:nth-child(2) { top: 22%; right: 12%; animation-delay: 0.6s; }
+    .sparkle:nth-child(3) { top: 40%; left: 6%; animation-delay: 1.2s; }
+    .sparkle:nth-child(4) { top: 58%; right: 10%; animation-delay: 1.8s; }
+    .sparkle:nth-child(5) { top: 75%; left: 15%; animation-delay: 2.4s; }
+    .sparkle:nth-child(6) { top: 30%; right: 7%; animation-delay: 3s; }
+    @keyframes sparkleFloat { 0%, 100% { transform: translateY(0) scale(1); opacity: 0.5; } 50% { transform: translateY(-12px) scale(1.4); opacity: 1; } }
+    .star { position: absolute; color: #6eb5ff; font-size: 14px; animation: starTwinkle 2.5s ease-in-out infinite; text-shadow: 0 0 10px #6eb5ff; }
+    .star:nth-child(7) { top: 8%; left: 22%; animation-delay: 0s; }
+    .star:nth-child(8) { top: 18%; right: 28%; animation-delay: 0.8s; }
+    .star:nth-child(9) { top: 48%; left: 12%; animation-delay: 1.6s; }
+    .star:nth-child(10) { top: 68%; right: 18%; animation-delay: 2.4s; }
+    @keyframes starTwinkle { 0%, 100% { opacity: 0.4; transform: scale(1) rotate(0deg); } 50% { opacity: 1; transform: scale(1.3) rotate(180deg); } }
+    .flower { position: absolute; font-size: 35px; opacity: 0; animation: flowerBloom 2s ease-out forwards; filter: hue-rotate(200deg) brightness(1.3); }
+    .flower:nth-child(11) { top: 10px; left: 10px; animation-delay: 0.5s; }
+    .flower:nth-child(12) { top: 10px; right: 10px; animation-delay: 0.7s; }
+    .flower:nth-child(13) { bottom: 10px; left: 10px; animation-delay: 0.9s; }
+    .flower:nth-child(14) { bottom: 10px; right: 10px; animation-delay: 1.1s; }
+    @keyframes flowerBloom { from { opacity: 0; transform: scale(0.5) rotate(0deg); } to { opacity: 0.6; transform: scale(1) rotate(360deg); } }
+    .corner-ornament { position: absolute; width: 70px; height: 70px; border: 2px solid #4a90e2; opacity: 0.7; }
+    .corner-ornament.top-left { top: 18px; left: 18px; border-right: none; border-bottom: none; animation: ornamentFade 2.5s ease-in-out infinite alternate; }
+    .corner-ornament.top-right { top: 18px; right: 18px; border-left: none; border-bottom: none; animation: ornamentFade 2.5s 0.6s ease-in-out infinite alternate; }
+    .corner-ornament.bottom-left { bottom: 18px; left: 18px; border-right: none; border-top: none; animation: ornamentFade 2.5s 1.2s ease-in-out infinite alternate; }
+    .corner-ornament.bottom-right { bottom: 18px; right: 18px; border-left: none; border-top: none; animation: ornamentFade 2.5s 1.8s ease-in-out infinite alternate; }
+    @keyframes ornamentFade { from { opacity: 0.5; } to { opacity: 0.9; } }
+    .content { padding: 60px 40px 45px; position: relative; z-index: 2; }
+    .header { text-align: center; margin-bottom: 40px; animation: slideDown 1s 0.3s ease-out both; }
+    @keyframes slideDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
+    .header h1 { font-family: 'Cinzel', serif; font-size: 32px; color: #6eb5ff; letter-spacing: 4px; margin-bottom: 15px; text-shadow: 2px 2px 6px rgba(0,0,0,0.6), 0 0 20px rgba(110, 181, 255, 0.4); animation: titleGlow 3s ease-in-out infinite alternate; }
+    @keyframes titleGlow { from { text-shadow: 2px 2px 6px rgba(0,0,0,0.6), 0 0 15px rgba(110, 181, 255, 0.4); } to { text-shadow: 2px 2px 6px rgba(0,0,0,0.6), 0 0 30px rgba(110, 181, 255, 0.7); } }
+    .divider { width: 180px; height: 2px; background: linear-gradient(90deg, transparent, #6eb5ff, transparent); margin: 20px auto; position: relative; }
+    .divider::after { content: '✦'; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: #1e3a5f; padding: 0 12px; color: #6eb5ff; font-size: 18px; }
+    .photo-container { text-align: center; margin: 35px 0; animation: photoZoom 1.3s 0.6s ease-out both; }
+    @keyframes photoZoom { from { opacity: 0; transform: scale(0.7); } to { opacity: 1; transform: scale(1); } }
+    .photo-frame { display: inline-block; padding: 10px; background: linear-gradient(145deg, #4a90e2, #6eb5ff); border-radius: 50%; box-shadow: 0 15px 40px rgba(74, 144, 226, 0.4); position: relative; }
+    .photo-frame::before { content: ''; position: absolute; top: -6px; left: -6px; right: -6px; bottom: -6px; border-radius: 50%; border: 3px solid #6eb5ff; opacity: 0.6; animation: photoRing 3.5s ease-in-out infinite; }
+    @keyframes photoRing { 0%, 100% { transform: scale(1); opacity: 0.6; } 50% { transform: scale(1.06); opacity: 0.9; } }
+    .photo { width: 220px; height: 220px; border-radius: 50%; object-fit: cover; border: 6px solid #1e3a5f; display: block; }
+    .text-content { max-width: 700px; margin: 0 auto; }
+    .family-intro { text-align: center; font-size: 24px; color: #6eb5ff; margin-bottom: 12px; animation: fadeInText 1s 0.9s ease-out both; font-weight: 600; }
+    @keyframes fadeInText { from { opacity: 0; } to { opacity: 1; } }
+    .main-text { text-align: center; font-size: 20px; line-height: 2; color: #e8f0ff; margin: 28px 0; animation: fadeInText 1s 1.1s ease-out both; }
+    .main-text p { margin-bottom: 22px; }
+    .blessing { text-align: center; font-size: 21px; line-height: 1.9; color: #6eb5ff; margin: 40px 0 30px; font-style: italic; animation: fadeInText 1s 2s ease-out both; }
+    .footer-message { text-align: center; font-size: 26px; color: #6eb5ff; margin-top: 35px; font-weight: 600; animation: fadeInText 1s 2.2s ease-out both; }
+    .dove { text-align: center; font-size: 55px; margin: 30px 0; opacity: 0; animation: doveFloat 3.5s 2.5s ease-in-out both; filter: drop-shadow(0 0 15px rgba(110, 181, 255, 0.5)); }
+    @keyframes doveFloat { 0% { opacity: 0; transform: translateY(25px); } 50% { opacity: 1; transform: translateY(-8px); } 100% { opacity: 1; transform: translateY(0); } }
+    @media (max-width: 768px) { .content { padding: 45px 28px 35px; } .header h1 { font-size: 26px; letter-spacing: 2px; } .photo { width: 180px; height: 180px; } .main-text { font-size: 18px; } .corner-ornament { width: 50px; height: 50px; } .family-intro { font-size: 20px; } .blessing { font-size: 19px; } }
+  </style>
 </head>
 <body>
-    <h1>Thank you for visiting!</h1>
-    <img src="photo.jpeg" alt="A beautiful photo">
-    <p>We appreciate your time.</p>
+  <div class="container">
+    <div class="card">
+      <div class="blue-border">
+        <div class="sparkle"></div><div class="sparkle"></div><div class="sparkle"></div>
+        <div class="sparkle"></div><div class="sparkle"></div><div class="sparkle"></div>
+        <div class="star">✦</div><div class="star">✦</div><div class="star">✧</div><div class="star">✧</div>
+        <div class="flower">🌸</div><div class="flower">🌸</div><div class="flower">🌸</div><div class="flower">🌸</div>
+        <div class="corner-ornament top-left"></div>
+        <div class="corner-ornament top-right"></div>
+        <div class="corner-ornament bottom-left"></div>
+        <div class="corner-ornament bottom-right"></div>
+        <div class="content">
+          <div class="header">
+            <h1>REMERCIEMENTS</h1>
+            <div class="divider"></div>
+          </div>
+          <div class="photo-container">
+            <div class="photo-frame">
+              <img src="photo.jpeg"</div>
+          </div>
+          <div class="text-content">
+            <p class="family-intro"><strong>La famille BADJOB,</strong></p>
+            <p class="family-intro">La famille LOG YUNG,</p>
+            <p class="family-intro">La famille LISSOM LI NDJAL,</p>
+            <p class="family-intro" style="margin-bottom: 20px;">et les familles alliées et apparentées,</p>
+            <div class="main-text">
+              <p>Vous remercient très sincèrement<br>d'avoir pris part aux obsèques de notre mère.</p>
+            </div>
+            <div class="blessing">
+              <p>Puisse le Tout-Puissant vous accorder<br>
+              Ses bénédictions les plus précieuses<br>
+              et vous combler de Ses grâces infinies.</p>
+            </div>
+            <div class="footer-message">Que Dieu vous bénisse abondamment.</div>
+            <div class="dove">🕊️</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
